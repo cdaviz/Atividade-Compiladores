@@ -4,8 +4,8 @@ import ply.lex as lex
 tokens = (
     'ID', 'NUMBER', 'PLUS', 'MINUS', 'TIMES', 'DIVIDE', 'ASSIGN',
     'LPAREN', 'RPAREN', 'LBRACE', 'RBRACE', 'SEMI', 'COMMA',
-    'EQ', 'LT', 'GT',  # Operadores de comparação
-    'IF', 'ELSE', 'WHILE', 'FOR', 'RETURN', 'INT', 'FLOAT', 'VOID'
+    'EQ', 'LT', 'GT', 'IF', 'ELSE', 'WHILE', 'FOR', 'RETURN',
+    'INT', 'FLOAT', 'VOID'
 )
 
 # Palavras-chave de C
@@ -32,8 +32,6 @@ t_LBRACE  = r'\{'
 t_RBRACE  = r'\}'
 t_SEMI    = r';'
 t_COMMA   = r','
-
-# Operadores relacionais
 t_EQ = r'=='
 t_LT = r'<'
 t_GT = r'>'
